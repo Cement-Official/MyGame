@@ -1,6 +1,9 @@
 #gameContainer{
     text-align: center;
 }
+#scoreTable{
+    text-align: right;
+}
 #gameBoard{
     border: 3px solid;
 }

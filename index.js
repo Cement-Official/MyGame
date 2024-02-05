@@ -8,6 +8,7 @@ const boardBackground = "black";
 const snakeColor = "darkgreen";
 const snakeBorder = "white";
 const foodColor = "purple";
+const scoreTable = "black";
 const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
