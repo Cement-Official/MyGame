@@ -1,7 +1,21 @@
-#gameContainer{
-    text-align: center;
+.Board{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-#scoreTable{
+#gameContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+
+    width: 100wh;
+}
+#leaderboardText{
+    text-align: right;
+}
+#leaderboard{
     text-align: right;
 }
 #gameBoard{

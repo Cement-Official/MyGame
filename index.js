@@ -81,6 +81,15 @@ function moveSnake() {
     snake.pop();
   }
 }
+function updateLeaderboard() {
+  const leaderboard = document.getElementById("leaderboard");
+  const playerName = prompt(
+    "Congratulations! You made it to the leaderboard. Enter your name:"
+  );
+  const scoreEntry = document.createElement("li");
+  scoreEntry.textContent = `${playerName}: ${score}`;
+  leaderboard.appendChild(scoreEntry);
+}
 function drawSnake() {
   ctx.fillStyle = snakeColor;
   ctx.strokeStyle = snakeBorder;
@@ -147,6 +156,7 @@ function displayGameOver() {
   ctx.textAlign = "center";
   ctx.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
   running = false;
+  updateLeaderboard();
 }
 function resetGame() {
   score = 0;

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="gameContainer">
+      <div class="Board">
         <canvas id="gameBoard" width="800" height="800"></canvas>
-        <canvas id="scoreTable" width="300" height="800"></canvas>
         <div id="scoreText">0</div>
         <button id="resetBtn">Reset</button>
+      </div>
+
+      <div>
+        <h2 id="leaderboardText">Leaderboard</h2>
+        <ol id="leaderboard"></ol>
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
